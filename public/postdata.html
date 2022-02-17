@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="postdata.css">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+
+</head>
+<body>
+
+    <!-- <form action="/postdata" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <br>
+        <input type="file" name="imgname">
+        <br>
+        <textarea name="desc" placeholder="Description">
+        </textarea> -->
+
+        <!-- <br>
+        <label for="cat">Choose Category:</label>
+
+<select name="cat" id="cat">
+  <option value="fruits">fruits</option>
+  <option value="vegetables">vegetables</option>
+  <option value="glases">glases</option>
+  <option value="bottles">bottles</option>
+</select> -->
+
+<!-- <br>
+
+<input type="number" name="price" placeholder="Price">
+<br>
+<button type="submit">Add Product</button>
+    </form> -->
+
+    <!-- bootstrap from -->
+
+<form class="form-horizontal" action="/postdata" method="post" enctype="multipart/form-data">
+<fieldset>
+
+<!-- Form Name -->
+<!-- <legend>ADD PRODUCTS</legend> -->
+
+<div class="wrapper">
+  <div class="logo"> <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/illustration-shopping-cart-expense-commerce-27.png" alt=""> </div>
+        <div class="text-center mt-4 name"> Add Product </div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="product_id">TITLE</label>  
+  <div class="col-md-4">
+  <input id="title" name="title" placeholder="PRODUCT TITLE" class="form-control input-md" required="" type="text"> 
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cat">CATEGORY</label>
+  <div class="col-md-4">
+    <select id="cat" name="cat" class="form-control">
+            <option value="men's clothing">men's clothing</option>
+            <option value="women's clothing">women's clothing</option>
+            <option value="jewelery">jewelery</option>
+            <option value="electronics">electronics</option>
+    </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="desc">DESCRIPTION</label>
+    <div class="col-md-4">                     
+      <textarea class="form-control" id="desc" name="desc" placeholder="PRODUCT DESCRIPTION"></textarea>
+    </div>
+  </div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="price">PRICE</label>  
+  <div class="col-md-4">
+  <input id="price" name="price" placeholder="PRICE" class="form-control input-md" required="" type="number">
+  </div>
+</div>
+
+
+ <!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="imgname">IMAGE</label>
+  <div class="col-md-4">
+    <input id="filebutton" name="imgname" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-primary" >SUBMIT</button>
+  </div>
+  </div>
+
+</div>
+
+</fieldset>
+</form>
+
+
+</body>
+</html>
